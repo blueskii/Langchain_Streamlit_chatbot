@@ -3,7 +3,7 @@ langchain
 langchain-core
 langchain-community
 langchain-openai
-langchain-chroma==0.2.0 #다른 버전은 모두 pysqlite3.dbapi2.OperationalError: no such table: collections 발생
+langchain-chroma==0.2.1 #다른 버전은 모두 pysqlite3.dbapi2.OperationalError: no such table: collections 발생
 pypdf
 langchain-text-splitters
 pysqlite3-binary
