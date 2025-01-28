@@ -15,6 +15,11 @@ import sys
 sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 from langchain_chroma import Chroma
 
+import streamlit import logger
+app_logger = logger.get_logger("TEST")
+app_logger.info(f"#######sqlite version: {sqlite3.sqlite_version}")
+
+
 #오픈AI API 키 설정
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
