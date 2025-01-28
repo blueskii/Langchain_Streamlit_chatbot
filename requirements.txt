@@ -1,9 +1,9 @@
 streamlit
 langchain
-langchain-core
 langchain-community
 langchain-openai
-langchain-chroma==0.1.0 #다른 버전은 모두 pysqlite3.dbapi2.OperationalError: no such table: collections 발생(0.2.1까지 테스트함)
+langchain-core
+langchain-chroma==0.1.0 #다른 버전은 모두 pysqlite3.dbapi2.OperationalError: no such table: collections 발생
+pysqlite3-binary
 pypdf
 langchain-text-splitters
-pysqlite3-binary

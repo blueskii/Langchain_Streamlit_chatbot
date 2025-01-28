@@ -9,13 +9,14 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-from langchain_chroma import Chroma
+# pysqlite3라는 라이브러리를 동적으로 임포트한 후, 이를 표준 라이브러리의 sqlite3 모듈로 대체
+#__import__('pysqlite3')
+#import sys
+#sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+from langchain.vectorstores import Chroma
 
-# 오픈AI API 키 설정
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+#오픈AI API 키 설정
+# os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 #cache_resource로 한번 실행한 결과 캐싱해두기
 @st.cache_resource
