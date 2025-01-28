@@ -6,3 +6,4 @@ langchain-openai
 langchain-chroma
 pypdf
 langchain-text-splitters
+pysqlite3-binary
