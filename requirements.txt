@@ -3,7 +3,7 @@ langchain
 langchain-core
 langchain-community
 langchain-openai
-langchain-chroma==0.1.1
+langchain-chroma==0.1.3
 pypdf
 langchain-text-splitters
 pysqlite3-binary
