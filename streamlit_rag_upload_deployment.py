@@ -80,7 +80,7 @@ def chaining(_pages):
 
 # Streamlit UI
 st.header("ChatPDF 💬 📚")
-uploaded_file = st.file_uploader("Upload a PDF", type=["pdf"])
+uploaded_file = st.file_uploader("Upload a PDF2", type=["pdf"])
 if uploaded_file is not None:
     pages = load_pdf(uploaded_file)
 
